@@ -13,8 +13,8 @@
             description:'high quality shirt'
         },
         {
-            name: 'Nike big shirt',
-            slug: 'nike-big-shirt',
+            name: 'Nike fat shirt',
+            slug: 'nike-fat-shirt',
             category: 'Pants',
             image: 'https://github.com/basir/amazona/blob/master/frontend/public/images/p2.jpg?raw=true',
             price: 250,
@@ -49,8 +49,8 @@
             description:'high quality shirt'
         },
         {
-            name: 'Adidas  pant',
-            slug: 'adidas-pant',
+            name: 'Adidas slim pant',
+            slug: 'adidas-slim-pant',
             category: 'Pants',
             image: 'https://github.com/basir/amazona/blob/master/frontend/public/images/p5.jpg?raw=true',
             price: 35,
