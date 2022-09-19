@@ -1,22 +1,16 @@
-import { useEffect, useState } from "react";
+import { useContext} from "react";
 import { Link } from "react-router-dom";
 // import data from "../Data";
-import axios from "axios";
+// import axios from "axios";
 import Ratings from "./Ratings";
+import { ProductsContext } from "../ProductsContextProvider";
 
+// export const UserContext = createContext();
 
 export default function HomeScreen() {
-  const [products, setProducts] = useState([]);
-
-  useEffect(() => {
-    const fetchData = async () => {
-      const result = await axios.get("/products-API");
-      setProducts(result.data)
-      // console.log(result);
-    }; 
-    fetchData() 
-  }, []);
+  const products = useContext(ProductsContext)
   // console.log(data.products);
+  console.log(products);
   return (
     <div>
       <h1>Featured Products</h1>
@@ -30,12 +24,11 @@ export default function HomeScreen() {
               <Link to={`product/${product.slug}`}>
                 <p>{product.name}</p>
               </Link>
-              <Ratings rating={product.rating}/>
-
+              <Ratings rating={product.rating} review={product.numReviews} />
               <p>
                 <strong>${product.price}</strong>
               </p>
-              <button>Add to Cart</button> 
+              <button className="add-to-cart">Add to Cart</button>
             </div>
           </div>
         ))}

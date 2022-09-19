@@ -21,7 +21,7 @@
             countInstock: 20,
             brand:'Nike',
             rating: 4.0,
-            numReviews: 10,
+            numReviews: 12,
             description:'high quality product'
         },
         {
@@ -33,7 +33,7 @@
             countInstock: 15,
             brand:'Adidas',
             rating: 4.5,
-            numReviews: 10,
+            numReviews: 16,
             description:'high quality shirt'
         },
         {
@@ -45,7 +45,7 @@
             countInstock: 15,
             brand:'Adidas',
             rating: 4.5,
-            numReviews: 10,
+            numReviews: 18,
             description:'high quality shirt'
         },
         {
@@ -57,7 +57,7 @@
             countInstock: 15,
             brand:'Adidas',
             rating: 4.5,
-            numReviews: 10,
+            numReviews: 24,
             description:'high quality shirt'
         },
     ]
